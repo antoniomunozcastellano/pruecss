@@ -1,0 +1,206 @@
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1.5;
+ background: #bfddb8;
+ color: #111;
+}
+
+
+.cabecera {
+ padding: 18px 16px;
+ background: #d9f011;
+ border-bottom: 1px solid #175bdb;
+}
+
+
+
+.cabecera h1 { margin: 0 0 6px 0; }
+
+.intro { margin: 0; max-width: 900px; }
+
+.contenedor {
+ max-width: 980px;
+ margin: 0 auto;
+ padding: 16px;
+ display: grid;
+ gap: 14px;
+}
+
+/*Utilizamos grid para crear una "cudricula" en nuestra pagina web y asi dividirlo en comlunas y lineas 
+y gap lo utilizamos para darle distancia a las línas y las columnas */
+
+.bloque {
+ background: #b3e6e3;
+ border: 1px solid #057570;
+ padding: 14px;
+ border-radius: 12px;
+}
+
+
+.bloque h2 { margin: 0 0 8px 0; }
+
+
+/* 1) BUTTON */
+.btn {
+ border: 1px solid #2b5bd7;
+ background: #2b5bd7;
+ color: #ff0000;
+ padding: 10px 14px;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: transform 120ms, filter 120ms;
+ margin-right: 8px;
+}
+
+
+.btn-sec {
+ background: #1bc947;
+ color: #1d53dd;
+}
+
+
+.btn:active {
+ transform: scale(0.97);
+ filter: brightness(0.92);
+}
+
+
+/* 2) ENLACE */
+.link {
+ display: inline-block;
+ padding: 8px 10px;
+ border-radius: 10px;
+ text-decoration: none;
+ border: 1px solid #7795e2;
+ background: #eef3ff;
+ color: #173a97;
+ margin-right: 8px;
+ transition: transform 120ms, background 120ms;
+}
+.link:active {
+ transform: scale(0.98);
+ background: #dd902a;
+}
+
+.input{
+display: inline-block;
+ padding: 8px 10px;
+ border-radius: 10px;
+ text-decoration: none;
+ border: 1px solid #7795e2;
+ background: #eef3ff;
+ color: #173a97;
+ margin-right: 8px;
+ transition: transform 120ms, background 120ms;}
+ .input:active{ 
+transform: scale(0.98);
+ background: #dd902a;}
+.input::file-selector-button  {
+   display: inline-block;
+ padding: 8px 10px;
+ border-radius: 10px;
+ text-decoration: none;
+ border: 1px solid #7795e2;
+ background: #eef3ff;
+ color: #173a97;
+ margin-right: 8px;
+ transition: transform 120ms, background 120ms;
+ 
+}
+.input:active{ 
+transform: scale(0.98);
+ background: #dd902a;}
+/* 3) INPUT */
+.campo {
+ display: block;
+ margin-top: 10px;
+}
+.campo span {
+ display: inline-block;
+ min-width: 90px;
+}
+.campo input[type="text"] {
+ width: min(420px, 100%);
+ padding: 10px 10px;
+ border-radius: 10px;
+ border: 1px solid #b9c4d9;
+ transition: transform 120ms;
+}
+/* En inputs, :active es muy breve: mientras pulsas */
+.campo input[type="text"]:active {
+ transform: scale(0.99);
+}
+.check {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+.check input[type="checkbox"] {
+ width: 18px;
+ height: 18px;
+}
+/* También podemos marcar el “clic” en checkbox */
+.check input[type="checkbox"]:active {
+ transform: scale(0.92);
+}
+
+/* 4) TARJETAS CLICABLES */
+.grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 10px;
+ margin-top: 10px;
+}
+.card {
+ display: block;
+ padding: 12px;
+ border-radius: 12px;
+ border: 1px solid #cbd5e1;
+ text-decoration: none;
+ color: inherit;
+ background: #f8fbff;
+ transition: transform 120ms, filter 120ms;
+}
+.card h3 { margin: 0 0 6px 0; }
+.card p { margin: 0; }
+.card:active {
+ transform: scale(0.98);
+ filter: brightness(0.95);
+}
+
+
+/* 5) DIV QUE SIMULA BOTÓN */
+.fake-buttons {
+ display: flex;
+ gap: 10px;
+ flex-wrap: wrap;
+ margin-top: 10px;
+}
+.fake-button {
+ padding: 10px 14px;
+ border-radius: 10px;
+ border: 1px solid #7aa7c7;
+ background: #e6f4ff;
+ cursor: pointer;
+ user-select: none;
+ transition: transform 120ms, filter 120ms;
+}
+.fake-button.danger {
+ border-color: #d46a6a;
+ background: #ffe9e9;
+}
+.fake-button:active {
+ transform: scale(0.97);
+ filter: brightness(0.92);
+}
+.nota {
+ margin-top: 10px;
+ font-size: 0.95rem;
+ color: #333;
+}
+.pie {
+ padding: 12px 16px;
+ text-align: center;
+ color: #444;
+}

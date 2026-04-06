@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>active</title>
+    <link rel="stylesheet" href="active.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>CSS <code>:active</code> en acción</h1> 
+        <!--Mediante la etiqueta <code> indicamos al navegador que el texto que incluyamos en su interior, 
+            debe ser interpretado visualmente como un fragmento de código.-->
+
+        <p class="intro">
+            Prueba a <strong>mantener pulsado </strong> el ratón sobre cada elemento.
+        </p>
+        Efecto de <code>:active</code> solo dura mientras mantienes la pulsación.
+    </header>
+
+
+    <main class="contenedor">
+
+        <!-- 1) button -->
+
+        <section class="bloque">
+            <h2> 1) <code>button:active</code> </h2>
+            <p>Un botón que "se hunde" al pulsarlo </p>
+            <button class="btn">Guardar cambios </button>
+            <button class="btn btn-sec ">Cancelar</button>
+
+        </section>
+
+        <!-- 2) enlace-->
+
+        <section class="bloque ">
+            <h2> 2) <code>a:active</code></h2>
+            <p>enlaces que cambian mientras se mantienen pulsados</p>
+            <p>
+                <input type="file" name="adjunto" class="input">
+                <a class="link" href="https://educamosclm.castillalamancha.es/s/home"> ver ejemplo</a>
+            </p>
+
+        </section>
+
+        <!--3) input-->
+        <section class="bloque">
+    <h2>3) <code>input:active</code></h2>
+    <p>
+    En inputs el estado <code>:active</code> se nota justo al hacer clic/tocar (mientras mantienes
+    pulsado).
+    Aquí lo marcamos con un pequeño “hundimiento”.
+    </p>
+    <label class="campo">
+    <span>Nombre:</span>
+    <input type="text" placeholder="Escribe tu nombre" />
+    </label>
+    <label class="campo check">
+    <input type="checkbox" />
+    <span>Acepto las condiciones</span>
+    </label>
+    </section>
+
+    <!-- 4) TARJETAS CLICABLES -->
+    <section class="bloque">
+    <h2>4) Tarjetas clicables con <code>:active</code></h2>
+    <p>Tarjetas que se presionan como un botón al hacer clic.</p>
+    <div class="grid">
+    <a class="card" href="#" aria-label="Abrir tarjeta: Recursos CSS">
+    <h3>Recursos CSS</h3>
+    <p>Enlaces, apuntes y ejemplos.</p>
+    </a>
+    <a class="card" href="#" aria-label="Abrir tarjeta: Prácticas de Grid">
+    <h3>Prácticas de Grid</h3>
+    <p>Retos por niveles para 1.º SMR.</p>
+    </a>
+    <a class="card" href="#" aria-label="Abrir tarjeta: Accesibilidad">
+    <h3>Accesibilidad</h3>
+    <p>Buenas prácticas para teclado y foco.</p>
+    </a>
+    </div>
+    </section>
+    <!-- 5) BLOQUES QUE SIMULAN BOTONES -->
+    <section class="bloque">
+    <h2>5) Bloques que simulan botones (<code>div</code>)</h2>
+    <p>
+    A veces se usa un <code>div</code> como botón (no es lo ideal).
+    Si se hace, debe llevar <code>role="button"</code> y <code>tabindex="0"</code>.
+    <br />
+    Aquí mostramos el efecto <code>:active</code> igualmente.
+    </p>
+    <div class="fake-buttons">
+    <div class="fake-button" role="button" tabindex="0">Añadir</div>
+    <div class="fake-button" role="button" tabindex="0">Editar</div>
+    <div class="fake-button danger" role="button" tabindex="0">Eliminar</div>
+    </div>
+    <p class="nota">
+    Nota: para que un “div botón” sea usable con teclado habría que añadir JavaScript (Enter/Espacio).
+    Aquí nos centramos solo en <code>:active</code>.
+    </p>
+    </section>
+    </main>
+    <footer class="pie">
+    <p>© 1.º SMR · Aplicaciones Web</p>
+    </footer>
+
+
+
+
+    </main>
+</body>
+</html>
